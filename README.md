@@ -1,6 +1,6 @@
 ---
 language: ruby
-tags: rails, active record associations, scaffolding, beginner
+tags: rails, activerecord, associations, scaffolding, introduction
 ---
 
 <img src="./amoeba-circus-medium.jpg" alt="Amoeba Circus">
@@ -21,7 +21,7 @@ We will also need to create acts that amoebas can be added to. Acts will have a 
 2. cd into app and initialize as a new git repo.
 3. add a remote matching the same name on your personal github.
 4. using rails generate commands, create the models and migrations needed for amoebas, acts, and talents.
-acts and amoebas will have models, controllers, and views, whereas talent only needs a model to store the name of each special talent: acrobat, contortionist, clown, juggler, or freak;
+acts and amoebas will have models, controllers, and views, whereas talent only needs a model to store the name of each special talent: acrobat, contortionist, clown, juggler, or freak.
 5. Check the migrations to make sure they are correct and make any changes neccesary.
 6. Fill in the appropriate active record associations for each model and then run the migrations.
 7. Fill in the /db/seeds.rb to build some acts, special talents, and amoebas.
@@ -34,4 +34,3 @@ acts and amoebas will have models, controllers, and views, whereas talent only n
  - show an indivdual act (that displays its date and all the amoba actors asiigned to it)
  - edit an individual act
  - bonus view: a single dashboard view that shows all acts, all amoebas, and a form to move amoebas
-10. When completed copy and paste link to your github repos master branch to this post on Piazza.
