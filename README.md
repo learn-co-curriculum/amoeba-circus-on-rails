@@ -15,6 +15,8 @@ First he will need to be able to input all his Amoeba performers into a list kee
 
 We will also need to create acts that amoebas can be added to. Acts will have a name, date and time of performance and a list of all the amoebas performing for that act.
 
+For an example of what you're aiming for, see [the demo app](http://the-amoeba-circus.herokuapp.com/).
+
 ## Instructions
 
 1. generate a new rails app
