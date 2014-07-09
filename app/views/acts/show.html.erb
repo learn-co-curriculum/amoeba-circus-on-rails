@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <img src="http://<%= @act.name.gsub(" ", "-") %>.jpg.to" width="300"></td>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @act.name %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @act.time %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @act.date %>
+</p>
+
+<p>
+  <strong>Amoebas:</strong>
+  <ul>
+    <% @act.amoebas.each do |amoeba| %>
+      <li><%= link_to "#{amoeba.name}", amoeba_path(amoeba) %></li>
+      <img src="/<%= amoeba.color %>_amoeba.jpg" width="75">
+    <% end %>
+  </ul>
+</p>
+
+<%= link_to 'Edit', edit_act_path(@act) %> |
+<%= link_to 'Back', acts_path %>

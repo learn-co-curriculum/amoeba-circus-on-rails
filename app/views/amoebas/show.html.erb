@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <img src="/<%= @amoeba.color %>_amoeba.jpg">
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @amoeba.name %>
+</p>
+
+<p>
+  <strong>Generation:</strong>
+  <%= @amoeba.generation %>
+</p>
+
+<p>
+  <strong>Talent:</strong>
+  <%= @amoeba.talent.name %>
+</p>
+
+<p>
+  <strong>Acts:</strong>
+  <ul>
+    <% @amoeba.acts.each do |act| %>
+      <li><%= link_to "#{act.name}", act_path(act) %></li>
+      <img src="http://<%= act.name.gsub(" ", "-") %>.jpg.to" width="75">
+    <% end %>
+  </ul>
+</p>
+
+<%= form_tag "/amoebas/#{@amoeba.id}/split" do -%>
+  <%= submit_tag "split" %>
+<% end %>
+
+<%= link_to 'Edit', edit_amoeba_path(@amoeba) %> |
+<%= link_to 'Back', amoebas_path %>

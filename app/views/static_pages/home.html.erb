@@ -1,0 +1,29 @@
+<style>
+  /* unvisited link */
+  a:link {
+      color: white;
+  }
+
+  /* visited link */
+  a:visited {
+      color: white;
+  }
+
+  /* mouse over link */
+  a:hover {
+      color: white;
+  }
+
+  /* selected link */
+  a:active {
+      color: white;
+  }
+</style>
+
+<div class="center">
+  <img src="/logo.jpg">
+  <h1>Welcome to the Amoeba Circus</h1>
+
+  <%= link_to "See Amoebas", amoebas_path, {:class => "btn btn-primary"} %>
+  <%= link_to "See Acts", acts_path, {:class => "btn btn-primary"} %>
+</div>

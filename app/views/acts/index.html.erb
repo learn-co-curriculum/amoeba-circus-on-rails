@@ -1,0 +1,29 @@
+<h1>Listing acts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Picture</th>
+      <th>Name</th>
+      <th>Time</th>
+      <th>Date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @acts.each do |act| %>
+      <tr>
+        <td><img src="http://<%= act.name.gsub(" ", "-") %>.jpg.to" width="75"></td>
+        <td><%= link_to "#{act.name}", act %></td>
+        <td><%= act.time.strftime("%H:%M")  %></td>
+        <td><%= act.date %></td>
+        <td><%= link_to 'Destroy', act, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Act', new_act_path %>
