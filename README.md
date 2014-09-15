@@ -1,3 +1,9 @@
+---
+language: ruby
+tags: rails, activerecord, associations, scaffolding, introduction
+resources: 1
+---
+
 # The Amoeba Circus Solution
 
 ## Details
@@ -15,3 +21,6 @@ rake db:seed
 rails s
 ```
 Visit `localhost:3000/` to view app in browser.
+
+## Resources
+* [Live Version](http://the-amoeba-circus.herokuapp.com/)
