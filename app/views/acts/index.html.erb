@@ -16,7 +16,7 @@
       <tr>
         <td><img src="http://<%= act.name.gsub(" ", "-") %>.jpg.to" width="75"></td>
         <td><%= link_to "#{act.name}", act %></td>
-        <td><%= act.time.strftime("%H:%M")  %></td>
+        <td><%= act.time %></td>
         <td><%= act.date %></td>
         <td><%= link_to 'Destroy', act, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
