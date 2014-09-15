@@ -12,11 +12,17 @@ describe "Amoebas", :type => :feature do
   end
 
   describe "show" do
+    before(:each) do
+      @amoeba = Amoeba.find(1)
+      visit "/amoebas/#{@amoeba.id}"
+    end
     it "displays amoeba and it's acts" do
-      amoeba = Amoeba.find(1)
-      visit "/amoebas/#{amoeba.id}"
-      expect(page).to have_content("#{amoeba.name}")
-      expect(page).to have_content("#{amoeba.acts.first.name}")
+      expect(page).to have_content("#{@amoeba.name}")
+      expect(page).to have_content("#{@amoeba.acts.first.name}")
+    end
+
+    it "has a link to split an amoeba" do
+      expect(page).to have_button("split")
     end
   end
 end
