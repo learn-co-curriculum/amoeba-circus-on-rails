@@ -1,8 +1,3 @@
----
-language: ruby
-tags: rails, activerecord, associations, scaffolding, introduction
----
-
 <img src="./amoeba-circus-medium.jpg" alt="Amoeba Circus">
 
 # Amoeba Circus on Rails
