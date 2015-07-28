@@ -1,9 +1,3 @@
----
-language: ruby
-tags: rails, activerecord, associations, scaffolding, introduction
-resources: 1
----
-
 # The Amoeba Circus Solution
 
 ## Details
