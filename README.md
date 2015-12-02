@@ -31,3 +31,5 @@ acts and amoebas will have models, controllers, and views, whereas talent only n
  - show an indivdual act (that displays its date and all the amoba actors asiigned to it)
  - edit an individual act
  - bonus view: a single dashboard view that shows all acts, all amoebas, and a form to move amoebas
+
+<a href='https://learn.co/lessons/amoeba-circus-on-rails' data-visibility='hidden'>View this lesson on Learn.co</a>
