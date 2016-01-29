@@ -32,4 +32,4 @@ acts and amoebas will have models, controllers, and views, whereas talent only n
  - edit an individual act
  - bonus view: a single dashboard view that shows all acts, all amoebas, and a form to move amoebas
 
-<a href='https://learn.co/lessons/amoeba-circus-on-rails' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/amoeba-circus-on-rails' title=''></a> on Learn.co and start learning to code for free.</p>
